@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Simple Distance Meter</title>
+<style>
+	body{background:#f4f4f4;font-family:arial;font-size:18px;}
+	button{font-size:20px;padding: 3px 13px}
+	button#stopBtn{display:none;}
+	#container{width:100%;margin:0 auto;text-align:center}
+	header{background:#333;padding:5px;}
+	header h1{color:#fff;font-size:30px;margin:0;padding:0;}
+	footer{background:#333;color:#fff;padding:8px;font-size:16px;}
+</style>
+</head>
+<body>
+	<div id="container">
+		<header>
+			<h1>Simple Distance Meter</h1>
+		</header>
+		<p>
+			<strong>Starting Position</strong>
+			<br />
+			<span id="startLat">Latitude...</span>,
+			<span id="startLon">Longitude...</span>
+		</p>
+		<!--
+		<p>
+			<strong>Start Time</strong>
+			<br />
+			<span id="starttime">0</span>
+		</p>
+		-->
+		<p>
+			<strong>Current Position</strong>
+			<br />
+			<span id="currentLat">Latitude...</span>,
+			<span id="currentLon">Longitude...</span>
+		</p>
+		<p>
+			<strong>Distance Traveled</strong>
+			<br />
+			<span id="distance">0</span> Kilometers
+			<br />
+			<span id="miles">0</span> Miles
+		</p>
+		<!--
+		<p>
+			<strong>End Time</strong>
+			<br />
+			<span id="endtime">0</span>
+		</p>
+		-->
+		<p>
+			<strong>Average Speed</strong>
+			<br />
+			<span id="speed">0</span> Miles Per Hour
+		</p>
+		<p>
+			<button id="startBtn" onclick="startTracking()">Start Tracking</button>
+			<button id="stopBtn" onclick="stopTracking()">Stop Tracking</button>
+		</p>
+		<footer>
+			<span>Simple Distance Meter</span>
+		</footer>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
